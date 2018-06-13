@@ -20,12 +20,7 @@
 	description: "A nameless Tibetan monk is said to have fully understood the essence, nature and power of the world. This was his only weapon, tool, and compass.",
 	aspects: {moth:12,auctionable:6,tool:1}
 	},
-	{id: "alie",
-	label: "A Lie",
-	description: "A bewilderingly entertaining book of lies, lies of all sorts. False Histories, nonexistent Names of fraudulent Hours, countries that could not even begin to be. Of course they have to be lies, don’t they? They contradict everything you know. But… Perhaps…",
-	aspects: {text:1,auctionable:2}
-	},
-	{
+	{    
     id: "fragmentlanternaltf",
     label: "????????",
     aspects:
