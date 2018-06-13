@@ -56,9 +56,86 @@
             description: "The Glory rends the skin of any who would behold it, but even the Glory can be brought to mercy by the Apple-in-the-Eye, if presented with the right moment, the right companionship and the right sacrifice.",
 			unique:true
         },
+	
+	
+	
+	{id: "goldentantra",
+	label: "The Golden Tantra",
+	description: "Reinterpreted into the English language and heavily annotated by Nicolas-Louis de la Caille, published posthumously by the Stargazing Society, that loosely-tied company of ambitious astronomers dedicated to the distant and enthralling Hours.",
+	aspects: {text:1, auctionable:2}
+	},
+	{id: "silvertantra",
+	label: "The Silver Tantra",
+	description: "The astrologist-writer Patricia Fletcher had retired after translating the Silver Tantra into English, having burned all her works and devoted herself to a life of asceticism.",
+	aspects: {text:1, auctionable:2}
+	},
+	{id: "lapistantrasanskrit",
+	label: "The Lapis Tantra",
+	description: "The serial killer Aritha Aruna chanted snippets of this Tantra as she plowed her way through the Land of the Great River.",
+	aspects: {text:1, auctionable:2, textsanskrit:1}
+	},
+	{id: "lapistantra",
+	label: "The Lapis Tantra",
+	description: "The serial killer Aritha Aruna chanted snippets of this Tantra as she plowed her way through the Land of the Great River. Only a single witness testimony proves this fact.",
+	aspects: {text:1, auctionable:2}
+	},
+	{id: "crystaltantrasanskrit",
+	label: "The Crystal Tantra",
+	description: "The Crystal Tantra is accused of being a fabrication every twenty years or so.",
+	aspects: {text:1, auctionable:2, textsanskrit:1}
+	},
+	{id: "crystaltantra",
+	label: "The Crystal Tantra",
+	description: "The Crystal Tantra is accused of being a fabrication every twenty years or so. Evidently, Edward Pierce wrote it from scratch and personally inflicted every sign of age upon the manuscript as to add it to his collection of unread texts, and to spite his competitor and occasional lover Samuel Shine.",
+	aspects: {text:1, auctionable:2}
+	},
+	{id: "agatetantravak",
+	label: "The Agate Tantra",
+	description: "This Tantra was originally recorded, read and publicized by a member of the Stargazing Society referred to as the Heron.",
+	aspects: {text:1, auctionable:2, textvak:1}
+	},
+	{id: "agatetantra",
+	label: "The Agate Tantra",
+	description: "This Tantra was originally recorded, read and publicized by a member of the Stargazing Society referred to as the Heron. A discursive epilogue describes their vehement refusal to ever translate the Agate Tantra, and the depths of meaning that would inevitably be lost in the process.",
+	aspects: {text:1, auctionable:2}
+	},
+	{id: "pearltantravak",
+	label: "The Pearl Tantra",
+	description: "The Pearl Tantra is said to have never been discovered by the Stargazing Society, having been passed down in a remote Buddhist temple for centuries.",
+	aspects: {text:1, auctionable:2, textvak:1}
+	},
+	{id: "pearltantra",
+	label: "The Pearl Tantra",
+	description: "The Pearl Tantra is said to have never been discovered by the Stargazing Society, having been passed down in a remote Buddhist temple for centuries. It is said that it was originally discovered by one of the monks, who saw it written on the underside of his skin. By what means he saw it is unclear."
+	aspects: {text:1, auctionable:2}
+	},
+	{id: "carneliantantravak",
+	label: "The Carnelian Tantra",
+	description: "The only known extant copy of the Carnelian Tantra had been acquired at an auction by the middling astronomer Fergus Bell.",
+	aspects: {text:1, auctionable:4, textvak:1}
+	},
+	{id: "carneliantantra",
+	label: "The Carnelian Tantra",
+	description: "The only known extant copy of the Carnelian Tantra had been acquired at an auction by the middling astronomer Fergus Bell, who went on to have a prolific career as adept and astrologist. He had removed both of his eyes after reading this Tantra."
+	aspects: {text:1, auctionable:4}
+	},
 		
 		
 		
+		
+		
+		
+	{id: "toollanternaltd",
+	label: "Jeweled Branch of Hourai",
+	description: "The land of Hourai and the Long that inhabit it could not have existed in any daylight History, but the jewel-fruits of its trees are sought by adepts to this day.",
+	aspects: {lantern:8,auctionable:4,tool:1}
+	},
+	
+	
+	
+	
+	
+	
 	{
     id: "vaultfansus1",
     label: "Mount Penglai",
