@@ -133,6 +133,8 @@
 		{id: "explorevaulteveningislesdefault_success",chance:100},
 		
 		{id: "explorevaultfansus1_success",chance:100},
+		
+		{id: "explorevaultbook1_success",chance:100},
 		],
 		comment:"You more or less have to modify this if you want your custom expedition to end properly."
 	},

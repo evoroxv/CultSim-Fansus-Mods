@@ -1,9 +1,45 @@
 {"recipes":
 	[
+				 {
+	id: "explore_vaultbook1_setup",
+	label: "Beginning an Expedition: Hearn's Flat",
+	actionId: "explore",
+	requirements:{funds:1,follower:1,vaultbook1:1},
+	effects: {seal_wardeddoor:1, curse_affliction:1, curse_nowhere:1, guardian_dead:1},
+	startdescription: "Hearn had made sure that her sanctum would not be disturbed to the best ability of a paranoid adept under a lax budget and nothing to lose. The locks on the door had been remade into an unsettling shape. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+	description: ".",
+	warmup:30,
+	craftable: true,
+	linked: [
+	{id: "explorevault_expeditionbegun",chance:100}],
+	},
+	
+			{
+	id: "explorevaultbook1_success",
+	label: "",
+	actionId: "explore",
+	requirements: {vaultbook1:1},
+	effects: {vaultbook1:-1, odesetc:1, toolmothaltf:1, dread:1},
+	deckeffect: {"vaultcontentsr":2, "vaultcontentsu":1},
+	startdescription: "Hearn had devoted all but one room to occult defences, and wasted away alone in her study. It seems that, once, she had been a master of the Invisible Arts. Nobody but the Hours know (and even the Hours might not know) what Hearn had been waiting for.",
+	description: "In the study, I find her optical telescope and a stack of reference material, several manuscripts of her earlier works - Odes, &c. for certain occasions, among others - her gently rotting corpse, and the mysterious tool of the monk - the Lone Vajra.",
+	warmup:30,
+	craftable: false
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 			 {
 	id: "explore_vaultfansus1_setup",
-	label: "An Expedition to Mount Penglai",
+	label: "Beginning an Expedition: Mount Penglai",
 	actionId: "explore",
 	requirements:{funds:1,follower:1,vaultfansus1:1},
 	effects: {peril_sea:1,guardian_long:1,guardian_jade:1,curse_visions:1},

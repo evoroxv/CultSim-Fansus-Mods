@@ -1,9 +1,9 @@
 {"recipes":
 	[
 	{
-	id: "dreamdecrepitude",
+	id: "fancydecrepitude",
 	label: "Remember the Stargazing Society",
-	actionId: "dream",
+	actionId: "fancy",
 	requirements: {decrepitude:1},
 	effects: {goldentantra:1, silvertantra:1, lapistantrasanskrit:1, crystaltantrasanskrit:1, agatetantravak:1, pearltantravak:1, carneliantantravak:1},
 	warmup:10,
@@ -90,5 +90,27 @@
     },
 	
 
+   {
+    id: "studyodesetc",
+    label: "Study 'Odes, &c. for certain occasions'",
+    actionId: "study",
+    requirements: {odesetc:1},
+    effects: {odesetc:-1, fragmentheartd:1},
+    warmup:60,
+    startdescription: "The conflict that drove the lovers apart is kept unclear, but both of them were adepts, if not even Long. Edward sends his paramour a rainbow of flowers, ‘one for each colour of the rainbow, as enumerated by the Apple-of-the-Eye’, which Samuel interprets as a rejection. There are hundreds of pages of this stuff.",
+    description: "Heron Maribelle possesses knowledge of apocryphal tantras uncharacteristic of an average englishwoman. Over the course of the Odes, Samuel recited seven, and Edward dismantles each one in turn. They are not married under the patronage of any one Hour, but their vows include a defensive invocation against the Apple-of-the-Eye, whom both lovers agree is a ‘most vain of gods’.",
+    craftable: true,
+    },
+	   {
+    id: "studytravelthroughdistanteast",
+    label: "Study 'Notes on Travel Through Distant East'",
+    actionId: "study",
+    requirements: {travelthroughdistanteast:1},
+    effects: {travelthroughdistanteast:-1, fragmentlanterne:1, vaultbook1:1},
+    warmup:60,
+    startdescription: "The monk never mentions his name to Shine, nor does he ever speak about himself at all. What the hermit does mention, though, is the esoteric teachings he followed - the Seven Jewels School of Buddhism - and the encroachment of death and the afterlife. ‘Death Knocks Upon all the Doors of the Sea-Dragon’s Palace.’",
+    description: "Seven days after they met, the hermit falls to an unclear illness. Samuel writes that while the monk had always had an aura to him, it became all the more tangible with his passing - he describes the rainbow colours emanating from his corpse as the colours of jewels. Over the next seven days, the body of the monk shrinks and shrinks, until only his tool and the seven colours remain. ‘I should bring the vajra back with me, as proof of what happened. It’s not as if the man will need it anymore. I wonder what that paranoiac Hearn will make of it…’",
+    craftable: true,
+    },
 ]
 }
