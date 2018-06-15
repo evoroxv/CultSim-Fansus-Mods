@@ -1,32 +1,5 @@
 {"recipes":
 	[
-
-    {
-	id: "explorefleeting",
-	label: "Remember the Sea-Dragon's Palace",
-	actionId: "explore",
-	requirements: {fleeting:1},
-	effects: {},
-    alternativerecipes:  [
-    {id: "fancyFansus", chance: 100, additional:true},
-	]
-	linked: [{id: "explorefleeting",chance:0}],
-	warmup:10,
-	startdescription: "It still lingers in my memories - a wildly different Mansus, where the Serpent was king.",
-	description: "[A new Verb for us to do anything we want. Most parts of the mod will be unlocked through it.]",
-	craftable: true,
-	},
-	
-     {
-	id: "fancyFansus",
-	label: "You Have Fancies",
-	actionId: "fancy",
-	effects: {decrepitude:1},
-	warmup:10,
-	startdescription: "This second, secret world is unfurling before my very eyes. This changes everything.",
-	description: "[You may now Fancy your Decrepitude to remember the Stargazing Society, and the seven jewel-tantras they had uncovered. Or you may Fancy your Desire to develop an inhuman narcissistic streak. Fancy a Fleeting Memory to get small, unrelated bits and pieces of the Sea-Dragon's Palace.]",
-	craftable: false,
-	},
  
      {
 	id: "fancyfleeting",
@@ -34,13 +7,9 @@
 	actionId: "fancy",
 	requirements: {fleeting:1},
 	effects: { fragmentsecrethistoriesaltf:1, waymirage:1, travelthroughdistanteast:1, alie:1, ritefollowerinfluenceconsumeingredient:1, vaultfansus1:1},
-    alternativerecipes:  [
-    {id: "fancyFansus", chance: 100, additional:true},
-	]
-	linked: [{id: "explorefleeting",chance:0}],
 	warmup:10,
 	startdescription: "The Sea-Dragon's Palace is a complicated beast, with a sprawling history.",
-	description: "",
+	description: ".",
 	craftable: true,
 	},
  

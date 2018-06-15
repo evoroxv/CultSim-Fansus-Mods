@@ -14,7 +14,7 @@
         aspects:
         {desire: 2, claritymarks:2},
         description: "I have dedicated myself to the immortal pursuit of perfection and beauty, no matter the cost. [This makes a Beauty victory possible. I must be a true initiate of the Mansus; I'll need to Work with Lantern-aspect to join the Apple-of-the-Eye in her glory.]",
-						slots: [{id:"Know",actionId: "work", required: {waystag_after: 1}, description: "Only a true adept, a Know, may take this step. The Know are those who have passed the Stag Door, in dreams."},
+		slots: [{id:"Know",actionId: "work", required: {waystag_after: 1}, description: "Only a true adept, a Know, may take this step. The Know are those who have passed the Stag Door, in dreams."},
 		{id:"Power", actionId: "work", required: {lantern:1},description: "I will require sufficient of the Lantern's cleansing dawn."}],
         },
 			{

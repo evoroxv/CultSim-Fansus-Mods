@@ -11,7 +11,7 @@
 	},
 	{id: "waymirage",
 	label: "Way: The Mirage Door",
-	description: "In my dreams, I've found the way to the Mirage Door, sometimes called the Formless Gate, or the Envious Door.",
+	description: "In my dreams, I've found the way to the Mirage Door, sometimes called the the Formless Door or the Eye’s Gate.",
 	aspects: {way:1},
 	unique:true
 	}, 

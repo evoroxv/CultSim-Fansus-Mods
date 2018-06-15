@@ -1,0 +1,49 @@
+{"elements":
+	[
+	{
+    id: "candy_ysabet",
+    label: "After Eights",
+    aspects:
+    {candy:1, moth:2, ingredient:1, society:1},
+	slots: [{id:"Company",description: "Candy tastes better in company.", required: {follower:1}}],
+    description: "I've seen Ysabet eat these in the headquarters a few times, but only during the hours called the Flowermaker and the Tribune of Scars.",
+    },
+
+	{id: "candy",
+	label: "Candy",
+	isAspect: true,
+	description: "Sweets for the sweet, as well as the sour and the bitter. It's better than flowers, at least."
+	},
+		
+	{
+    id: "ysabet_l1",
+    label: "Ysabet, my Lover",
+    aspects:
+    {mortal:1, follower:1, disciple:1, exalted:1, moth:10, lover:1},
+    description: "Ysabet knows where to find me, and I am one of the few people who know where to find <i>her</i>.",
+	xtriggers: {killmortal:corpse, derangemortal:lunatic, capturefollower:ysabet_p}
+    },
+	
+	{id: "lover",
+	label: "Lover",
+	isAspect: true,
+	description: "Something between a passing fancy and a lifelong dedication to one another."
+	},
+	
+		{
+    id: "ysabet_l2",
+    label: "Ysabet, my Twin",
+    aspects:
+    {follower:1, disciple:1, exalted:1, moth:12, grail:12, forge:10, heart:10, lover:2, twin:1},
+    description: "Ysabet had spent a life of solitude. She finally has somebody whom she can entrust her every worry, her every secret, her entire life. Me. [There's no getting rid of your own Twin, outside of deleting her through the console. Her id is: 'ysabet_l2'",
+	xtriggers: {killmortal:ysabet_l2, derangemortal:ysabet_l2, capturefollower:ysabet_l2, rebellion:ysabet_l2}
+    },
+	
+		{id: "twin",
+	label: "Twin",
+	isAspect: true,
+	description: "We're inseparable, like the beach and the sea. We carry the Witch-and-Sister's blessing."
+	},
+	
+]
+}
