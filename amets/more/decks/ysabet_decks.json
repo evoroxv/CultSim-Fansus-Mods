@@ -1,0 +1,18 @@
+{"decks":[
+	{id: "ysabet_dates",
+	label:"A date with Ysabet",
+	description:"Each evening brings different delights, and occasionally perils.",
+	spec:
+	["funds",
+	"funds",
+	"funds",
+	"dread",
+	"influencegraile",
+	"influencemothe",
+	"influencegraile",
+	"influencemothe",],
+defaultcard: "funds",
+resetonexhaustion:true	
+	},
+
+]}
