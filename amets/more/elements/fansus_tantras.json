@@ -24,7 +24,8 @@
 	{id: "lapistantrasanskrit",
 	label: "The Lapis Tantra",
 	description: "The serial killer Aritha Aruna chanted snippets of this Tantra as she plowed her way through the Land of the Great River.",
-	aspects: {text:1, auctionable:2, textsanskrit:1}
+	aspects: {text:1, auctionable:2, textsanskrit:1},
+	xtriggers: {scholarsanskrit: lapistantra},
 	},
 	{id: "lapistantra",
 	label: "The Lapis Tantra",
@@ -34,7 +35,8 @@
 	{id: "crystaltantrasanskrit",
 	label: "The Crystal Tantra",
 	description: "The Crystal Tantra is accused of being a fabrication every twenty years or so.",
-	aspects: {text:1, auctionable:2, textsanskrit:1}
+	aspects: {text:1, auctionable:2, textsanskrit:1},
+	xtriggers: {scholarsanskrit: crystaltantra}
 	},
 	{id: "crystaltantra",
 	label: "The Crystal Tantra",
@@ -44,31 +46,34 @@
 	{id: "agatetantravak",
 	label: "The Agate Tantra",
 	description: "This Tantra was originally recorded, read and publicized by a member of the Stargazing Society referred to as the Heron.",
-	aspects: {text:1, auctionable:2, textvak:1}
+	aspects: {text:1, auctionable:2, textvak:1},
+	xtriggers: {scholarvak: agatetantra},
 	},
 	{id: "agatetantra",
 	label: "The Agate Tantra",
 	description: "This Tantra was originally recorded, read and publicized by a member of the Stargazing Society referred to as the Heron. A discursive epilogue describes their vehement refusal to ever translate the Agate Tantra, and the depths of meaning that would inevitably be lost in the process.",
-	aspects: {text:1, auctionable:2}
+	aspects: {text:1, auctionable:2},
 	},
 	{id: "pearltantravak",
 	label: "The Pearl Tantra",
 	description: "The Pearl Tantra is said to have never been discovered by the Stargazing Society, having been passed down in a remote Buddhist temple for centuries.",
-	aspects: {text:1, auctionable:2, textvak:1}
+	aspects: {text:1, auctionable:2, textvak:1},
+	xtriggers: {scholarvak: pearltantra},
 	},
 	{id: "pearltantra",
 	label: "The Pearl Tantra",
-	description: "The Pearl Tantra is said to have never been discovered by the Stargazing Society, having been passed down in a remote Buddhist temple for centuries. It is said that it was originally discovered by one of the monks, who saw it written on the underside of his skin. By what means he saw it is unclear."
+	description: "The Pearl Tantra is said to have never been discovered by the Stargazing Society, having been passed down in a remote Buddhist temple for centuries. They say it was originally discovered by one of the monks, who saw it written on the underside of his skin. By what means he saw it is unclear.",
 	aspects: {text:1, auctionable:2}
 	},
 	{id: "carneliantantravak",
 	label: "The Carnelian Tantra",
 	description: "The only known extant copy of the Carnelian Tantra had been acquired at an auction by the middling astronomer Fergus Bell.",
-	aspects: {text:1, auctionable:4, textvak:1}
+	aspects: {text:1, auctionable:4, textvak:1},
+	xtriggers: {scholarvak: carneliantantra},
 	},
 	{id: "carneliantantra",
 	label: "The Carnelian Tantra",
-	description: "The only known extant copy of the Carnelian Tantra had been acquired at an auction by the middling astronomer Fergus Bell, who went on to have a prolific career as adept and astrologist. He had removed both of his eyes after reading this Tantra."
+	description: "The only known extant copy of the Carnelian Tantra had been acquired at an auction by the middling astronomer Fergus Bell, who went on to have a prolific career as adept and astrologist. He had removed both of his eyes after reading this Tantra.",
 	aspects: {text:1, auctionable:4}
 	},
 	

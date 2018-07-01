@@ -23,7 +23,7 @@
 	requirements: {ysabet_l1:1},
 	effects: {ysabet_l1:-1, ysabet_l2:1, health:1, reason:1, passion:2, fascination:2, glimmering:8, fragmentmothf:1, fragmentmothd:1, fragmentmothc:1, fragmentmothb:1, fragmentgraile:1, fragmentgrailc:1, fragmentheartb:1, fragmentforgeb:1, contentment:3},
 	startdescription: "Ysabet approaches cautiously, like a cat or a spider. She recognizes the Names of the Witch-and-Sister I invoke, but curiousity gets the best of her. We'll always be together, now.",
-	description: "My flesh is as soft as molted wax, I grab her hand with mine and pull her into a tight embrace. We're bound as closely as atoms, as hair and scalp, as lake and river. Her senses, her memories, her skill and knowledge, her health and sickness, all flow into me. I am her, she is me. We are a pair of lovebirds. We are one. We shall never leave each other's side.",
+	description: "My flesh is as soft as molten wax, I grab her hand with mine and pull her into a tight embrace. We're bound as closely as atoms, as hair and scalp, as lake and river. Her senses, her memories, her skill and knowledge, her health and sickness, all flow into me. I am her, she is me. We are a pair of lovebirds. We are one. We shall never leave each other's side.",
 	warmup:30,
 	craftable: false,
 	},
@@ -33,7 +33,8 @@
 	actionId: "work",
 	requirements: {},
 	effects: {},
-	slots: [{id:"Spouse",description: "I promise to be true to you in good times and in bad, in sickness and in health. I will love you and honour you all the days of my life.", required: {lover:1, twin:-1}}],
+	slots: [{id:"Spouse",description: "I promise to be true to you in good times and in bad, in sickness and in health. I will love you and honour you all the days of my life.", required: {lover:1},
+	forbidden:{twin:1}}],
 	startdescription: "...for it could be you. [The Witch-and-Sister, the thirsting Hour of the Sea, blend flesh to flesh. Call upon your lover, and they will be forever joined with you as a Twin.]",
 	description: ".",
 	linked:[

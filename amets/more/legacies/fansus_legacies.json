@@ -1,0 +1,15 @@
+{"legacies":[
+
+{id: "blossom",
+label: "A Bontiful Blossom",
+description: "Endowed from birth with talent and beauty. I am to become a famous artist, or the model of one. It must be so.",
+startdescription: "My tutor requests that I pay him a visit. Urgently.",
+effects: {introjob_blossom:1, passion:1},
+image: "moth",
+fromEnding:"visionsending",
+availableWithoutEndingMatch:true
+},
+
+
+
+]}

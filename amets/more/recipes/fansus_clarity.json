@@ -52,21 +52,31 @@
 		slots: [{id:"Reflection",required:{lore:1,},description: "Dedicate myself with the lore of the principle I seek. I may not focus my efforts elsewhere. Not now."}],
         startdescription: "Should I dedicate myself to my purpose? [Clarity is the shared dream of the Lantern and the Moth.]",
         description: "I have decided to remain as I am... for now.",
-		alternativerecipes: [{id: "dreamascension_upgrade_clarity_1to2",chance:100}],
+		alternativerecipes: [{id: "dreamascension_upgrade_clarity_1to2_moth",chance:100},
+		{id: "dreamascension_upgrade_clarity_1to2_lantern",chance:100}],
 		warmup: 60,
         craftable: true
     },
 {
-        id: "dreamascension_upgrade_clarity_1to2",
+        id: "dreamascension_upgrade_clarity_1to2_moth",
 		label: "Mirror's Dedication",
 		actionId: "dream",
-		requirements: {lore:1,moth:1},
+		requirements: {lore:1, moth:1},
 		startdescription:"I will dedicate myself to the pursuit of beauty.",
 		description: "I've whispered the freeing words to the candle. Their every syllable is aflame - I have earned my attention. I will bleach myself to glass, so I may stand where there is light. [I have advanced a step towards a terrible ascension.]",
 		effects:{ascensionclaritya:-1,ascensionclarityb:1},		
 		burnimage: "lanterndedication"
 },
-
+{
+        id: "dreamascension_upgrade_clarity_1to2_lantern",
+		label: "Mirror's Dedication",
+		actionId: "dream",
+		requirements: {lore:1, lantern:1},
+		startdescription:"I will dedicate myself to the pursuit of beauty.",
+		description: "I have spoken the words: 'Each Hour has its colour, but colour exists only where there is light.' I will bleach myself to glass, so I may stand where there is light. [I have advanced a step towards a terrible ascension.]",
+		effects:{ascensionclaritya:-1,ascensionclarityb:1},		
+		burnimage: "lanterndedication"
+},
 
 	
 	
@@ -100,7 +110,7 @@
 		label:"The Demands of Narcissism",
 		actionId: "craving",
 		requirements: {claritymarks:1},
-		slots: [{id:"Peace and Quiet",description: "I expect a parade of compliments.", required: {reputation:1}, greedy:true }],
+		slots: [{id:"Peace and Quiet",description: "I wish to be left alone by fans and hunters both.", required: {reputation:1}, greedy:true }],
 		startdescription: "Time alone with myself and a mirror. That's all I need.",
 		linked: [,
 		{id:"ascensionsuccesscravingclarity_descend",chance:100},
@@ -127,7 +137,7 @@
 		label:"Another Mark",
 		actionId: "craving",
 		effects: {glimmering:2},
-		startdescription:"",
+		startdescription:".",
 		description: "I have seen what I was, what I am, and what I may become. The Marks brighten in me.",
 		aspects: {ascend:1}
 		},
@@ -135,7 +145,7 @@
 		
 		
 		
-		
+
 		
 	   {
         id: "minorlanternvictory_fansus",
@@ -150,7 +160,21 @@
         warmup: 60,
         craftable: true,
 		signalEndingFlavour: Grand,
-		ending: "minorlanternvictory"
+		ending: "visionsending"
+    },
+	
+				   {
+        id: "minorlanternvictory_fansus",
+        label: "The Seventh Mark?",
+        actionId: "work",
+        requirements: {ritual: 1,
+		ascensionclarityf:1},
+        effects: {},
+        startdescription: "The Seventh Mark is the Glassgarden. I am close: close as the window to the sun's gaze. I will need all the power of Moth I can muster, as well as the power of Lantern, to at least the eighteenth and twelfth degrees of intensity.",
+        description: ".",
+        warmup: 60,
+        craftable: false,
+		hintonly: true
     },
 ]
 }

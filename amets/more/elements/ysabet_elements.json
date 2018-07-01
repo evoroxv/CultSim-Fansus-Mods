@@ -27,16 +27,16 @@
 	{id: "lover",
 	label: "Lover",
 	isAspect: true,
-	description: "Something between a passing fancy and a lifelong dedication to one another."
+	description: "Something between a passing fancy and a lifelong dedication."
 	},
 	
 		{
     id: "ysabet_l2",
     label: "Ysabet, my Twin",
     aspects:
-    {follower:1, disciple:1, exalted:1, moth:12, grail:12, forge:10, heart:10, lover:2, twin:1},
-    description: "Ysabet had spent a life of solitude. She finally has somebody whom she can entrust her every worry, her every secret, her entire life. Me. [There's no getting rid of your own Twin, outside of deleting her through the console. Her id is: 'ysabet_l2'",
-	xtriggers: {killmortal:ysabet_l2, derangemortal:ysabet_l2, capturefollower:ysabet_l2, rebellion:ysabet_l2}
+    {follower:1, moth:12, grail:12, forge:10, heart:10, lover:2, twin:1},
+    description: "Ysabet had spent a life of solitude, but now she finally has somebody whom she can entrust her every worry, her every secret, her entire life. Me. [There's no getting rid of your own Twin, outside of deleting her through the console. Her id is: ysabet_l2]",
+	xtriggers: {killmortal:ysabet_l2, derangemortal:ysabet_l2, capturefollower:ysabet_l2}
     },
 	
 		{id: "twin",

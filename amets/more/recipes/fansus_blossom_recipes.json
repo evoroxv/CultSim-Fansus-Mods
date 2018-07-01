@@ -1,0 +1,80 @@
+{"recipes":
+ [
+ 			{id: "legacyblossomwork",
+		label: "A Meeting with my Tutor",
+		actionId:"work",
+		requirements: {introjob_blossom: 1},
+		effects: {funds:2, introjob_blossom:-1, health:1, passion:3},
+		alternativerecipes:[{id: "legacyblossomopenstudy",chance:100,additional:true}],
+        startdescription: "He requested I visit him in his office. When I meet him, his eyes are overflowing with tears.",
+        description: "'These are the remains of your tuition fee - I've nothing to teach you, so I'm giving this back to you. You know, you remind me of #PREVIOUSCHARACTERNAME#, before the business with the mirror. Maybe I'll show you some of their works. #PREVIOUSCHARACTERNAME# had a way with a brush, even if they only painted nightmares.'",
+        warmup: 10,
+		craftable:true
+	},
+	
+	{id: "legacyblossomopenstudy",
+	actionId:"study",
+	label: "Study the Works of #PREVIOUSCHARACTERNAME#",
+	startdescription: "The date of our meeting is today. The man that was my tutor leads me into his gallery. And there are the paintings of the one he spoke of.",
+	description: "#PREVIOUSCHARACTERNAME# truly had a fevered imagination. There are a great many impossible creatures - smoke with eyes, a fire whose gouts are each a tooth, shattered bones walking upright. Even the portraits are all in some way <i>wrong</i>. Their every landscape is the same - again and again they depict the endless ladder, the invisible light, the seven entrances, the house without walls. My dreams will be rich tonight.",
+	effects: {glimmering:2},
+	alternativerecipes:[{id: "legacyblossomopendream",chance:100,additional:true}],
+	warmup:10
+	},
+	
+	{id: "legacyblossomopendream",
+	actionId:"dream",
+	label: "The Invisible Light",
+	startdescription: "In sleep, I am a crooked tree. Moths crawl my bark. Dawn begins, although the light is invisible. At its touch, I straighten, to reach for the sun.",
+	description: "That light! Cleaner and purer than anything I could touch in waking life. I must have it, I must join it! When I wake, my face is wracked with tears of joy. I return to my morning routine only reluctantly. Sadly, I have a life to live. [TIME is now passing.]",
+	effects: {LEVER_LastDesire:1, fragmentmoth:1, fragmentlantern:1},
+	alternativerecipes:[{id: "needs",chance:100,additional:true},
+		{id: "legacyblossomhook",chance:100,additional:true}],
+	warmup:30
+	},
+	
+		{id: "legacyblossomopenexplore",
+		actionId:"explore",
+	label: "The Endless Minutiae",
+	startdescription: "The world has me. Maybe, one day, I'll have the world.",
+	description: "I now know where lay the shops, the stores, the markets. I have triangulated my household. The city has finally opened up to me.",
+	effects: {fleeting:1, contentment:1},
+	warmup:30
+	},
+	
+	
+	{id:"legacyblossomhookfulfilment",
+	actionId:"hookplot",
+	label:"Needs and Expenses",
+	requirements: {passion:1},
+	startdescription: "I'll need to compose a list. A thorough list of every need I will face on my own.",
+	description: "Food, water, daily showers, a way to wash my clothes, an acquaintance so I don't die of solitude, a source of books so I don't die of boredom.",
+	effects:{reason:1, locationbookdealer:1, funds:4},
+	alternativerecipes:[{id: "legacyblossomopenexplore",chance:100,additional:true},
+	{id: "legacyblossomopentalk",chance:100,additional:true}],
+	},
+	{id:"legacyblossomhook",
+	actionId:"hookplot",
+	label:"Survival?",
+	startdescription:"I could give in to the demands of day-to-day existence. But they <i>will</i> devour my Passion.",
+	description: ".",
+	alternativerecipes:[{id: "legacyblossomhookfulfilment",chance:100}],
+	slots: [{id:"Motivation",required: {passion:1},consumes:true}],
+	linked: [{id: "legacyblossomhook",chance:100}],
+	warmup:60
+	},
+	
+	
+	{id: "legacyblossomopentalk",
+	label: "Kindred Spirits",
+	actionId: "talk",
+	startdescription:"I have found somebody who had seen the same things I have. The trees, the light, the light!",
+	description: "We discussed the works of the person that brought us together, and the dreams afterwards. They dreamt of me, that night. We are connected.",
+	deckeffect: {"acquaintances":1},
+	warmup:30,
+	craftable: false
+	}
+
+	
+]
+}
