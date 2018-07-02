@@ -44,6 +44,20 @@
         craftable: true,
 		burnimage: "flammarion"
     },
+		   {
+        id: "ascensionclarity_upgradetoobsession",
+        label: "The Transparent Key",
+        actionId: "work",
+        requirements: {ascensionclarityb:1,
+		waystag_after:1,
+		moth:6},
+        effects: {ascensionclarityb:-1,ascensionclarityc:1},
+        startdescription: "This rite is the Key that will allow me to enter the Tower of Treasures. I will be changed forever.",
+        description: "The Rite is complete. The Marks of the Apple-of-the-Eye are upon me. The First Mark is what I have said, and the second is what I have done. If I inspect my body, I'll find the Third. My mind is gleaming with new desire.",
+        warmup: 60,
+        craftable: true,
+		burnimage: "flammarion"
+    },
 			{
         id: "dreamascensionclaritya",
         label: "Meditate on my goal of unearthly beauty",
