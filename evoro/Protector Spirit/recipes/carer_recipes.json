@@ -11,7 +11,7 @@ label: "Time Passes",
 actionId: "carer_time",
 requirements: {},
         alternativerecipes:
-		[{id: "", chance:100, additional: true},}],
+		[{id: "", chance:100, additional: true}],
         startdescription: "Time, the sundial's shadow, passes. I must keep my dogs safe, or the Society will come to collect.",
         description: ".",
         warmup: 60,
