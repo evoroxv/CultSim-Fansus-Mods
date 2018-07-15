@@ -48,7 +48,7 @@
 	effects: {contentment:1},
 	warmup:10,
 	craftable: false},
-	
+
     {id: "study_spectrestories",
     label: "Study the Stories of Spectres",
     actionId: "study",
@@ -57,7 +57,7 @@
     description: "These old stories clearly have no first-hand experience of real hauntings, but I manage to gleam some useful knowledge from them nonetheless.\nHowever, once again, the footsteps echo through the halls, and I am forced to cut short my studies for fear of something prowling in this once-abandoned home.",
     effects: {restlessness:1},
     warmup:30,
-    craftable: false},
+    craftable: true},
 
     {id: "legacycarerjob_epilogue",
     label: "A Visitation",
