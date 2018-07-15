@@ -1,0 +1,8 @@
+{"verbs":[
+	{
+	"id": "carer_time",
+	"label": "Time",
+	"description": "The sundial's shadow.",
+	"atStart":false
+	}
+]}
