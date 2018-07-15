@@ -11,25 +11,38 @@ label: "Time Passes",
 actionId: "carer_time",
 requirements: {},
         alternativerecipes:
-		[{id: "", chance:100, additional: true}],
+		[{id: "rewardsofsociety", chance:100, additional: true}],
         startdescription: "Time, the sundial's shadow, passes. I must keep my dogs safe, or the Society will come to collect.",
         description: ".",
         warmup: 60,
         craftable: false,
-		slots: [{id:"dog_society",
-					required: {dog_corpse: 1},
+		slots: [{id:"pet_society",
+				label:"Ex-Companions",
+				required: {dog_corpse: 1},
 				greedy: true,
-				noanim:true,
+				noanim: true,
 				description: "The Pet Society must check up on my charges every so often. A distraction from my real duties, but they provide a little compensation for my efforts."
 				}],
-        linked:[{id:"discardseason",chance:100}],
+        linked:[{id:"discardcarer",chance:100}],
 	signalimportantloop:true
 	},
 
-{id: "discardseason",
-	actionId: "time",
-	effects: {season:-1,funds:-999},
+{id: "discardcarer",
+	actionId: "carer_time",
+	effects: {season:-1,dog_corpse:-999},
 	warmup:0,
 	 linked:[{id:"drawcarer",chance:100}]
 	},
+	
+	{id: "rewardsofsociety",
+	label:"The Rewards of Care",
+	description: "I have taken good care of my charges. I will be rewarded this eve.",
+	effects: {funds:1}
+	warmup:10,
+	craftable:false
+	},
+	
+	{id: "study_smallnote",
+	actionId: "study",
+	effects: {
 ]}
