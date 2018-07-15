@@ -1,0 +1,32 @@
+{"recipes":
+	[
+
+    {
+	id: "explorefleeting",
+	label: "Remember your many eccentricities",
+	actionId: "explore",
+	requirements: {fleeting:1},
+	effects: {},
+    alternativerecipes:  [
+    {id: "fancyFansus", chance: 100, additional:true},
+	]
+	linked: [{id: "explorefleeting",chance:0}],
+	warmup:10,
+	startdescription: "I was never like everybody else, was I? I could do the unthinkable, if I simply focused. [Exploring the Fleeting Memory will create a new verb, Fancy, that will serve as a starting point for other mods.]",
+	description: "[Your fancies are laid bare before the world.]",
+	craftable: true,
+	},
+	
+     {
+	id: "fancyFansus",
+	label: "You Have Fancies",
+	actionId: "fancy",
+	effects: {},
+	warmup:10,
+	startdescription: "This second, secret world is unfurling before my very eyes. This changes everything.",
+	description: "[Fancy your Desire to develop an inhuman narcissistic streak. Fancy a Fleeting Memory to get bits and pieces of a Mansus that never was. Fancy your Decrepitude to remember that Mansus' Stargazing Society, and the seven jewel-tantras they had uncovered.  Fancy Ysabet, a Skintwister, to buy some candy for her.]",
+	craftable: false,
+	},
+	
+]
+}

@@ -1,0 +1,174 @@
+{"recipes":
+	[
+				 {
+	id: "explore_vaultbook1_setup",
+	label: "Beginning an Expedition: Hearn's Flat",
+	actionId: "explore",
+	requirements:{funds:1,follower:1,vaultbook1:1},
+	effects: {seal_wardeddoor:1, curse_affliction:1, curse_nowhere:1, guardian_dead:1},
+	startdescription: "Hearn had made sure that her sanctum would not be disturbed to the best ability of a paranoid adept under a lax budget and nothing to lose. The locks on the door had been remade into an unsettling shape. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+	description: ".",
+	warmup:30,
+	craftable: true,
+	linked: [
+	{id: "explorevault_expeditionbegun",chance:100}],
+	},
+	
+			{
+	id: "explorevaultbook1_success",
+	label: "",
+	actionId: "explore",
+	requirements: {vaultbook1:1},
+	effects: {vaultbook1:-1, odesetc:1, toolmothaltf:1, dread:1},
+	deckeffect: {"vaultcontentsr":2, "vaultcontentsu":1},
+	startdescription: "Hearn had devoted all but one room to occult defences, and wasted away alone in her study. It seems that, once, she had been a master of the Invisible Arts. Nobody but the Hours know (and even the Hours might not know) what Hearn had been waiting for.",
+	description: "In the study, I find her optical telescope and a stack of reference material, several manuscripts of her earlier works - Odes, &c. for certain occasions, among others - her gently rotting corpse, and the mysterious tool of the monk - the Lone Vajra.",
+	warmup:30,
+	craftable: false
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			 {
+	id: "explore_vaultfansus1_setup",
+	label: "Beginning an Expedition: Mount Penglai",
+	actionId: "explore",
+	requirements:{funds:1,follower:1,vaultfansus1:1},
+	effects: {peril_sea:1,guardian_long:1,guardian_jade:1,curse_visions:1},
+	startdescription: "An infamous octet of reputed immortals once came to this place in search of treasure from behind the world’s skin. The Long remain here to this day, alongside the miracles they discovered. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+	description: ".",
+	warmup:30,
+	craftable: true,
+	linked: [
+	{id: "explorevault_expeditionbegun",chance:100}],
+	},
+	
+			{
+	id: "explorevaultfansus1_success",
+	label: "Fruit and Treasure",
+	actionId: "explore",
+	requirements: {vaultfansus1:1},
+	effects: {vaultfansus1:-1, health:1, toollanternaltd:1},
+	deckeffect: {"vaultcontentsr":3},
+	startdescription: "Nothing stands between us and the treasured gardens of Hourai. The mendicant Tieguai warns us that we may only take a single peach from the trees, lest we anger the Eye-Closed. The necromancer Guolao indicates that no such rules apply to the treasures strewn in the white grass.",
+	description: "Guolao takes a bone, or merely a bone-white stone, and chucks it at one of the trees. A branch breaks off and lands upon the grass. 'You can take it with you, alongside what you’ve been promised. Just leave some treasure for us, friend!' The taste of the crystal peach had refined my body into something durable and vital. I am more than I was. I will never forget that bleached land.",
+	warmup:30,
+	craftable: false
+	},
+		{
+	id: "explorevaultguardian_jade_encounter",
+	actionId:"explore",
+	label: "Jaded Servants",
+	startdescription: "The location's pristine and jaded servants have gathered to stop you. They cannot be persuaded in the same way stone cannot be persuaded, but they may be broken by Edge or Forge.",
+	requirements: {guardian_jade:1},
+	slots:[{id:"Assistance", description: "Funds are essential for expeditions. Followers will allow me to pass obstacles.",required: {follower:1,funds:1}}],
+	alternativerecipes: [
+	{id: "explorevaultguardian_jade_highedge",chance:100},
+	{id: "explorevaultguardian_jade_highforge",chance:100},
+	{id: "explorevaultguardian_jade_midedge",chance:100},
+	{id: "explorevaultguardian_jade_midforge",chance:100},	
+	{id: "explorevaultguardian_jade_lowedge",chance:100},
+	{id: "explorevaultguardian_jade_lowforge",chance:100}],
+	warmup:30,
+	craftable: false,
+	linked: [{id:"explorevaultguardian_jade_failure",chance:100}]
+	},
+	
+	{id:"explorevaultguardian_jade_highedge",
+	actionId: "explore",
+	requirements:{edge:10},
+	label:"Our strength is matchless.",
+	startdescription:"The Servants are advisors, oracles and courtiers. Their kind is not meant to fight. We have slain faster, stronger opponents. These living sculptures stand no chance of stopping us.",
+		  description:".",
+	linked: [{id:"explorevaultguardian_jade_success_edge",chance:100},
+	{id:"explorevaultguardian_jade_failure",chance:100}]	  
+		  },
+		{id:"explorevaultguardian_jade_midedge",
+	actionId: "explore",
+	requirements:{edge:5},
+	label:"Our strength is considerable.",
+	startdescription:"The Jaded Servants were human, once. A little of that humanity remains, hidden beneath their nephrite. We can strike at that humanity like a viper, but they may defeat us before we get the chance.",
+		  description:".",
+	linked: [{id:"explorevaultguardian_jade_success_edge",chance:70},
+	{id:"explorevaultguardian_jade_failure",chance:100}]	  
+		  },
+		  	{id:"explorevaultguardian_jade_lowedge",
+	actionId: "explore",
+	requirements:{edge:1},
+	label:"Our strength may not be enough.",
+	startdescription:"Each Servant had once been human, and each Servant had rejected their humanity for a life of brilliance. Each one could crush us in her vice grip, if she so chose. Still, we may have a chance.",
+		  description:".",
+	linked: [{id:"explorevaultguardian_jade_success_edge",chance:30},
+	{id:"explorevaultguardian_jade_failure",chance:100}]	  
+		  },
+		  	{id:"explorevaultguardian_jade_highforge",
+	actionId: "explore",
+	requirements:{forge:10},
+	label:"We call upon the Snake-Tail, who tears at the skin of the world.",
+	startdescription:"The Jaded Servants had locked away their humanity in order to become statuesque nephrite. The Snake-Tail, who shatters doors, will be happy to shatter his way to their very core.",
+		  description:".",
+	linked: [{id:"explorevaultguardian_jade_success_forge",chance:100},
+	{id:"explorevaultguardian_jade_failure",chance:100}]	  
+		  },
+		  	{id:"explorevaultguardian_dead_midforge",
+	actionId: "explore",
+	requirements:{forge:5},
+	label:"We call upon the Snake-Tail, who has shattered a million doors.",
+	startdescription:"The Jaded Servants are statues before they are people. They move with the grandiose rhythm of tectonic plates. The Tail had shattered things greater than tectonic plates, but not much greater.",
+		  description:".",
+	linked: [{id:"explorevaultguardian_jade_success_forge",chance:70},
+	{id:"explorevaultguardian_jade_failure",chance:100}]	  
+		  },
+		  	{id:"explorevaultguardian_jade_lowforge",
+	actionId: "explore",
+	requirements:{forge:1},
+	label:"We call upon the Snake-Tail, who despises all borders.",
+	startdescription:"[FNORD]",
+		  description:".",
+	linked: [{id:"explorevaultguardian_jade_success_forge",chance:30},
+	{id:"explorevaultguardian_jade_failure",chance:100}]	  
+		  },
+			{
+	id: "explorevaultguardian_jade_success_edge",
+	actionId:"explore",
+	label: "The Lifeless Servants",
+	startdescription: "Their bodies may be whole, but they no longer live. Our finesse has secured us the vay forward.",
+	description: ".",
+	effects: {guardian_jade:-1},
+	craftable: false,
+		linked: [{id:"explorevaulttick",chance:100}],
+		warmup:30
+	},
+				{
+	id: "explorevaultguardian_jade_success_forge",
+	actionId:"explore",
+	label: "The Shattered Servants",
+	startdescription: "Only jewel-shards remain where the Jaded Servants once stood. We had won our way forward.",
+	description: ".",
+	effects: {guardian_jade:-1},
+	craftable: false,
+		linked: [{id:"explorevaulttick",chance:100}],
+		warmup:30
+	},
+				{
+	id: "explorevaultguardian_jade_failure",
+	actionId:"explore",
+	label: "The Power of Jade",
+	startdescription: "The Jaded Servants first negotiate, then prevaricate, then deceive, then chant mantras, then shout invocations, but never strike. Their clever words have repelled us, and have taken root in our minds besides.",
+	description: ".",
+	craftable: false,
+		linked: [{id:"explorevault_casualty",chance:70},
+		{id:"explorevaulttick",chance:100}],
+		warmup:30
+	},
+	
+]
+}

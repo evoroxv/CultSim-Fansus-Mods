@@ -1,0 +1,276 @@
+{"recipes":
+	[
+     
+	 {
+	id: "fancyysabet",
+	label: "Shop for Candy",
+	actionId: "fancy",
+	requirements: {ysabet_d:1},
+	effects: {candy_ysabet:1, funds:-1},
+	slots: [{id:"Money",description: "Few things come free.", required: {funds:1}}],
+	warmup:60,
+	startdescription: "Ysabet keeps her habits well-hidden, but I've known her long enough to suspect what candy she enjoys.",
+	description: "I return from the market with a package of After Eights, for the two of us to enjoy during the dawns and dusks.",
+	craftable: true,
+	},
+
+
+
+								{
+	id: "twinritual_ysabet",
+	label: "Till Death Do Us Part",
+	actionId: "work",
+	requirements: {ysabet_l1:1},
+	effects: {ysabet_l1:-1, ysabet_l2:1, health:1, reason:1, passion:2, fascination:2, glimmering:8, fragmentmothf:1, fragmentmothd:1, fragmentmothc:1, fragmentmothb:1, fragmentgraile:1, fragmentgrailc:1, fragmentheartb:1, fragmentforgeb:1, contentment:3},
+	startdescription: "Ysabet approaches cautiously, like a cat or a spider. She recognizes the Names of the Witch-and-Sister I invoke, but curiousity gets the best of her. We'll always be together, now.",
+	description: "My flesh is as soft as molten wax, I grab her hand with mine and pull her into a tight embrace. We're bound as closely as atoms, as hair and scalp, as lake and river. Her senses, her memories, her skill and knowledge, her health and sickness, all flow into me. I am her, she is me. We are a pair of lovebirds. We are one. We shall never leave each other's side.",
+	warmup:30,
+	craftable: false,
+	},
+									{
+	id: "A_full_moon_appears_creatures_are_reborn",
+	label: "A FULL MOON APPEARS...",
+	actionId: "work",
+	requirements: {},
+	effects: {},
+	slots: [{id:"Spouse",description: "I promise to be true to you in good times and in bad, in sickness and in health. I will love you and honour you all the days of my life.", required: {lover:1},
+	forbidden:{twin:1}}],
+	startdescription: "...for it could be you. [The Witch-and-Sister, the thirsting Hour of the Sea, blend flesh to flesh. Call upon your lover, and they will be forever joined with you as a Twin.]",
+	description: ".",
+	linked:[
+	{id: "twinritual_ysabet", chance: 100},],
+	warmup:30,
+	craftable: false,
+	},
+								{
+	id: "twinritual_general",
+	label: "A FULL MOON APPEARS...",
+	actionId: "work",
+	requirements: {ritetoolconsumeingredient:1, grail:10, moth:6, heart:2},
+	effects: {},
+	startdescription: "Creatures are reborn, and even a lizard should not be slain... [This rite is a secret, and, if performed, will join you and the love of your life for as long as you live. Together, you will be greater than any who would oppose you.]",
+	description: ".",
+	linked:[
+	{id: "A_full_moon_appears_creatures_are_reborn", chance: 100},],
+	warmup:30,
+	craftable: true,
+	},
+	
+	
+	
+	
+	
+							{
+	id: "minordate_grail",
+	label: "A Crimson Night",
+	actionId: "talk",
+	requirements: {influencegraile:1},
+	effects: {fragmentmothc:1, fragmentforge:1},
+	startdescription: "Ysabet has invited me out for another night of exploring our common thirst for pleasure, and for each other. I can never be fully prepared for what she has in store for me.",
+	description: "Tonight, I am slowly and gently flayed. Inch by inch, she peels my skin off, whispering sizzling words into my naked mind. Every sacrifice elates me, I quiver with ecstasy at the shedding of my skin. I melt in her arms. By the end of the night, both of us have sated our thirst.",	
+	warmup:40,
+	craftable: false,
+	},
+							{
+	id: "minordate_moth",
+	label: "An Unclothed Night",
+	actionId: "talk",
+	requirements: {influencemothe:1},
+	effects: {fragmentgrailc:1, fragmentheart:1},
+	startdescription: "Ysabet has indicated a hotel with an occult reputation, in which I am to meet her. And now, I hear a knocking on the door.",
+	description: "Tonight, she is wearing her skin like a shawl. Over the course of the night, I unclothe her, muscle by muscle, tendon by tendon, until only the bone remains. We spend a long and wondrous night in each other's grasp, and end up sharing confidences as the sun rises. 'I was a dancer before I had met you, you know. Performing for the world is second nature for me, now. Baring myself like this is a joy I had long forgotten.'",	
+	warmup:40,
+	craftable: false,
+	},
+							{
+	id: "minordate_leathy",
+	label: "A Nightmarish Day",
+	actionId: "talk",
+	requirements: {},
+	effects: {ingredientmothd:1, fragmentmoth:1},
+	startdescription: "I wouldn't believe the statement, if this was anybody else, and I still don't fully believe it. The two of us pass the night like this, and Ysabet asks that I stay for the morning. She soon goes to sleep - she rises in the dusk, and as such spends the day asleep - and wakes up screaming in some ten minutes. I am there to reassure her when she does, and she eventually goes back to sleep.",
+	description: "She wakes up startled and angry, over and over again. I do my best to reassure her whenever it happens, but it's clear that I cannot do much to help. She demands, furiously, that I leave. That evening, I receive an anonymous package - a bottle of challenging liqour and a note: 'You have my apologies for having to see me in such a sorry state. Consider the bottle a gift - I prefer white wine to <i>this</i>, but it does wonders when you need to stop being conscious as soon as theoretically possible.'",
+	warmup:60,
+	craftable: false,
+	},
+						{
+	id: "minordate_dread",
+	label: "A Threadbare Night",
+	actionId: "talk",
+	requirements: {dread:1},
+	effects: {contentment:1},
+	startdescription: "Ysabet has invited me to her sparcely decorated apartment. Ysabet doesn't have a fridge, or, for that matter, a kitchen. 'I never learned to cook,' she says, 'never needed to.",
+	description: ".",
+	linked:[
+	{id: "minordate_leathy", chance: 100},],
+	warmup:40,
+	craftable: false,
+	},
+					{
+	id: "minordate_funds",
+	label: "A Profitable Night",
+	actionId: "talk",
+	requirements: {funds:1},
+	effects: {funds:1, influencemothc:1},
+	startdescription: "Ysabet wants to take me out for a night of profitable entertainment. 'There's no need to worry. Nothing that happens today will be blamed on us. Nobody will know it was us.'",
+	description: "Tonight, we are a pair of lovebirds. She clings to my hand, lays her head on my shoulder, whispers sweet nothings into my ear. Her smile is different, kinder, warmer. As dawn approaches, she returns to her usual self - distant, hidden, midnight. She has given me my share of the profits. I am not altogether certain what we have accomplished today.",	
+	warmup:40,
+	craftable: false,
+	},
+					{
+	id: "minordate_router",
+	label: "Lovers",
+	actionId: "talk",
+	requirements: {passion:1},
+	effects: {contentment:1},
+	startdescription: "I wanted to be with her, even if only for a little bit. Might she consider a date?",
+	description: ".",
+	warmup:10,
+	deckeffect: {"ysabet_dates":1},
+	linked:[
+	{id: "minordate_funds", chance: 100},
+	{id: "minordate_dread", chance: 100},
+	{id: "minordate_grail", chance: 100},
+	{id: "minordate_moth", chance: 100},],
+	craftable: false,
+	},
+				{
+	id: "talktofollower_router",
+	label: "Leader and Follower",
+	actionId: "talk",
+	requirements: {reason:1},
+	effects: {},
+	startdescription: "I'm here to discuss the needs of your cult, or the state of the Mansus, or what further capers Ysabet needs to embark upon.",
+	description: ".",	
+	warmup:10,
+	linked:[
+	{id: "talktofollower", chance: 100},],
+	craftable: false,
+	},
+	{
+	id: "talkysabet",
+	label: "Discuss important matters with Ysabet",
+	actionId: "talk",
+	requirements: {ysabet_l1:1},
+	effects: {},
+	slots: [{id:"Attitude",description: "Professionals or lovers?", required: {reason:1, passion:1}}],
+	warmup:10,
+	alternaterecipes:[
+	{id: "minordate_router", chance: 100},
+	{id: "talktofollower_router", chance: 100},
+	{id: "daterequest_ysabet", chance: 100},],
+	startdescription: "A smoky meeting-room, and the two of us. What are we to each other today?",
+	description: ".",
+	craftable: true,
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+				{
+	id: "firstdate_ysabet_passion",
+	label: "Something More",
+	actionId: "talk",
+	requirements: {passion:1},
+	effects: {injury:1, fragmentgrailc:1, ysabet_d:-1, ysabet_l1:1},
+	startdescription: "Whether I had always nurtured feelings for her, or never before considered a romantic relationship between the two of us, I now long to be with her. I can only say yes.",
+	description: "Ysabet smiles at me with the cold and confident smile she displays only rarely, before going on particularly complex capers, but I'm a part of it all now. She's a part of my life, and I am a part of hers. She grabs me by the hand and I follow her as the two of us run through dim, thin alleyways illuminated only by the soft light of the moon. In darkness, we explore the pleasures of the Grail and the Moth, but, more importantly, we explore each other. By morning, we are both bloodied, but we are both happy.",
+	warmup:60,
+	craftable: false,
+	},
+				{
+	id: "firstdate_ysabet_reason",
+	label: "Nothing More",
+	actionId: "talk",
+	requirements: {reason:1},
+	effects: {contentment:-1},
+	startdescription: "Ysabet is only a friend to me, or I am afraid this relationship will not work out, or an affair with one of my own followers would damage my reputation in the eyes of the society I lead. Whatever the reason, I can only say no.",
+	description: "Ysabet only nods. When I next meet her, she is back to her usual, midnight self, which could mean any number of things.",	
+	warmup:20,
+	craftable: false,
+	},
+			{
+	id: "daterequest_ysabet",
+	label: "Something More?",
+	actionId: "talk",
+	requirements: {},
+	effects: {},	
+	slots: [{id:"Answer",description: "Will we? Will we not?", required: {reason:1, passion:1}}],
+	warmup:20,
+	linked:[
+	{id: "firstdate_ysabet_reason", chance: 100},
+	{id: "firstdate_ysabet_passion", chance: 100},
+	{id: "daterequest_ysabet", chance: 100},],
+	startdescription: "As I prepare to leave, Ysabet suggests that the two of us spend the whole night together, travelling the city and exploring <b><i>all sorts of things</i></b>. [Add Passion to accept her offer, and advance your relationship to a condition of intimacy, or add Reason, to remain leader and follower.]",
+	description: ".",
+	craftable: false,
+	},
+				{
+	id: "deliciousevening_ysabet",
+	label: "A Delicious Evening",
+	actionId: "talk",
+	requirements: {candy_ysabet:1, ysabet_d:1},
+	effects: {candy:-1, contentment:2},
+	warmup:60,
+	linked:[
+	{id: "daterequest_ysabet", chance: 100},],
+	startdescription: "We share a private evening out at the edge of the Capital, watching the sunset. Ysabet does not talk much, even in private, but she is a wonderful listener. Every so often, she interjects with a bizarre story of her own, which leave me shocked and wanting for context each time. By the end of the evening, we are both smiling.",
+	description: ".",
+	craftable: false,
+	},
+	
+		{
+	id: "talk_candy_ysabet_l0",
+	label: "A Delicious Evening?",
+	actionId: "talk",
+	requirements: {candy_ysabet:1, ysabet_d:1},
+	effects: {},
+	warmup:20,
+	linked:[
+	{id: "deliciousevening_ysabet", chance: 100},],
+	startdescription: "As I explain my suggestion, Ysabet shakes her head. That would be a 'No', if I didn't find a scrap of paper with an address inside one of my coat pockets later today.",
+	description: ".",
+	craftable: true,
+	},
+	
+	
+	
+	
+	
+	{
+	id: "talk_candy_noncompatible",
+	label: "A Bittersweet Evening",
+	actionId: "talk",
+	requirements: {candy:1, follower:1},
+	effects: {candy:-1, contentment:1},
+	warmup:60,
+	startdescription: "I have brought candy to the headquarters, to the chagrin of my followers.",
+	description: "My companion's opinion about my taste in sweets is, at best, lukewarm. Still, we have spent a pleasant evening eating sweets and discussing the little, unimportant things that make up one's life.",
+	craftable: true,
+	},
+	
+		{
+	id: "talk_candy_alone",
+	label: "A Sour Evening",
+	actionId: "talk",
+	requirements: {candy:1, follower:-1},
+	effects: {candy:-1, restlessness:1},
+	warmup:60,
+	startdescription: "I have brought candy to the headquarters, to the chagrin of nobody, except maybe myself.",
+	description: "I peer out of the window as I chuck another piece of candy into my mouth. Every pair walking the streets is like a blister on my skin, an itch to scratch.",
+	craftable: true,
+	},
+	
+	
+	
+]
+}

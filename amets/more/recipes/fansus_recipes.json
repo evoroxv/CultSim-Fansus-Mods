@@ -1,0 +1,133 @@
+{"recipes":
+	[
+ 
+     {
+	id: "fancyfleeting",
+	label: "Study the Sea-Dragon's Palace",
+	actionId: "fancy",
+	requirements: {fleeting:1},
+	effects: { fragmentsecrethistoriesaltf:1, waymirage:1, travelthroughdistanteast:1, alie:1, ritefollowerinfluenceconsumeingredient:1, vaultfansus1:1},
+	warmup:10,
+	startdescription: "The Sea-Dragon's Palace is a complicated beast, with a sprawling history.",
+	description: ".",
+	craftable: true,
+	},
+ 
+ 
+   {
+    id: "aLieStudy",
+    label: "Read a Book of Lies",
+    actionId: "study",
+    requirements: {alie:1},
+    effects: {alie:-1},
+    linked:  [
+   {id: "partialTruth", chance: 33},
+   {id: "rankBS", chance: 50},
+   {id: "goodTruth", chance: 100},
+],
+    warmup:30,
+    startdescription: "This would truly be an awful introduction to the Secret Arts for not a single word of it contains truth. Quite possibly, it is deliberate misinformation. Or worse, a cognitohazard. Or worse, a book of the Tail. Nevertheless...",
+    description: ".",
+    craftable: true,
+    },
+  {
+    id: "rankBS",
+    label: "A Labyrinth of Untruth.",
+    actionId: "study",
+    effects: {fascination: 2, fragmentlanternd: 1},
+   
+    startdescription: "The whispers of Hours that are not are no less insiduous than those that are. Perhaps you do not want to read the dire details of the rites used to splinter the Soot-Furnace. Yet it twists and turns and coils and winds and my mind my mind my mind!",
+    description: "In the beginning there was the Sun-of-Blood and the Haruspex. Seeking her greatest augury, the Haruspex slew the Sun... Dire stories, awful stories, but fortunately, fortunately untrue stories and incomplete stories, the book is damaged. One can learn as much from what is not as from what is, as much as it hurts...",
+    warmup: 30,
+    },
+  {
+    id: "partialTruth",
+    label: "A Puzzle of Untruth.",
+    actionId: "study",
+    effects: {fragmentlanternd: 1, fragmentsecrethistoriesc: 1},
+   
+    startdescription: "The whispers of Hours that are not are no less thunderous than those that are. The details of the Haruspex's prophecy still echo in your mind. It twists and turns and coils and winds but not painfully.",
+    description: "The Haruspex brought her prophecy to the people of the world and held it aloft as their annihilation... in a field that sounds oddly familiar. Curious stories, odd stories, but untrue stories and incomplete stories, the book is damaged. Still, one can learn as much from what is not as from what is.",
+    warmup: 30,
+    },
+  {
+    id: "goodTruth",
+    label: "A Glimmer of Truth?",
+    actionId: "study",
+    effects: {fragmentlanterne: 1, fragmentsecrethistoriesc: 1, contentment: 1},
+   
+    startdescription: "The whispers of Hours that are not are no less wondrous than those that are. The deeds of the Serpent-that-Shattered, the stranger who defied the prophecies still ring triumphantly in your mind.",
+    description: "That which came from Nowhere was crushed in its coils. The Histories, even the History of the Mansus, was shattered, but the Serpent smiled and rose to rebuild the world. Awesome stories, magnificent stories, but sadly untrue stories and incomplete stories, the book is damaged. Still, can learn as much from what is not as from what is.",
+    warmup: 30,
+    },
+	
+	
+	
+	
+	
+	
+			{
+        id: "summon_spirit_lanternc_heart",
+        label: "Summon an impervious creature of the Tower of Treasures",
+        actionId: "work",
+        requirements: {ritual:1,knock:2,lantern:6,heart:2,desire:-1},
+		effects: {spirit_mothd_heart:1},
+        startdescription: "The Jaded Maiden! She might be as old as the first Hours, or she might measure her age in seconds. She will answer to Lantern, for what she had seen, and Heart, for what she had survived.",
+        description: "The Maiden would be very easily mistaken for a statue, if statues were ever made with such detail (or with such verdant nephrite). She is quite content to stay like this.",
+        warmup: 60,
+        craftable: true,
+		linked: [{id:"summoninglosingcontrol",chance:30}]
+    },
+				{
+        id: "summon_spirit_mothe_grail",
+        label: "Summon one of the Name-emanations of the Apple-of-the-Eye",
+        actionId: "work",
+        requirements: {ritual:1,knock:5,moth:10,grail:2,desire:-1},
+		effects: {spirit_lanterne_grail:1},
+        startdescription: "Jonquil will only come to those who know how he shed his old life, and will only humour those who can satisfy his new desires.",
+        description: "Jonquil had remained a beautiful youth, with long, thrice-combed hair the colour of noontime sun or carved citrine, and the clear, transparent skin characteristic of the Names of the Apple-of-the-Eye. He demands exalting accommodations.",
+        warmup: 60,
+        craftable: true,
+		linked: [{id:"summoninglosingcontrol",chance:30}]
+    },
+	
+	
+	{id: "dreamusemirageway",
+	label: "The Way to the Mirage Door",
+	actionId: "dream",
+	requirements: {waymirage:1},
+	slots: [{id:"Ascent",description: "The Mirage Door is not closed, but guarded.",required: {tool:1}}],
+	startdescription: "The Mirage Door, occasionally called the Formless Door or the Eye’s Gate, is not closed, but guarded. 'You will have to best yourself to pass through the Mirage Door.' - chimes the Door's guardian as it copies my every feature. 'You cannot best yourself.'",
+	description: "I have to best myself to pass through the Mirage Door. I cannot best myself.",
+	craftable: true,
+	aspects:{fatiguing:1},
+	alternativerecipes: [
+	{id:"dreamentermiragemirror",chance:100},
+	{id:"dreamentermiragevajra",chance:100},
+	],
+	craftable:true,
+	warmup:60,
+	},
+	{id: "dreamentermiragemirror",
+	label: "Passing the Mirage Door",
+	actionId: "dream",
+	craftable: false,
+	requirements: {waymirage:1,mirror:1},
+	startdescription: "There are rules to the Mirage Door: If I show my reflection a mirror, it will be obliged to fight that reflection, just as I am obliged to fight it. I will pass the Door in the commotion, but my mirror will not remain whole.",
+	description: ".",
+	portaleffect: "peacockdoor",
+	aspects: {"crackmirror":1},
+	warmup:0	
+	},
+	{id: "dreamentermiragevajra",
+	label: "Passing the Mirage Door",
+	actionId: "dream",
+	craftable: false,
+	requirements: {waymirage:1,toolmothaltf:1},
+	startdescription: "There are rules to the Mirage Door: If I forget what I am, nothing will stand to oppose me. I only need to close my eyes and walk.",
+	description: ".",
+	portaleffect: "peacockdoor",
+	warmup:0	
+	},
+]
+}

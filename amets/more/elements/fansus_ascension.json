@@ -1,0 +1,57 @@
+{"elements":
+    [ 
+		{
+        id: "ascensionclaritya",
+        label: "Temptation: Beauty",
+        aspects:
+        {desire: 1, claritymarks:1},
+        description: "I could achieve artistry of an intensity few could imagine. [This card will allow you to win a Beauty victory, if you upgrade it far enough. Dreaming about it might advance or change it.]"
+        },
+	
+		{
+        id: "ascensionclarityb",
+        label: "Dedication: Beauty",
+        aspects:
+        {desire: 2, claritymarks:2},
+        description: "I have dedicated myself to the immortal pursuit of perfection and beauty, no matter the cost. [This makes a Beauty victory possible. I must be a true initiate of the Mansus; I'll need to Work with Lantern-aspect to join the Apple-of-the-Eye in her glory.]",
+		slots: [{id:"Know",actionId: "work", required: {waystag_after: 1}, description: "Only a true adept, a Know, may take this step. The Know are those who have passed the Stag Door, in dreams."},
+		{id:"Power", actionId: "work", required: {lantern:1, moth:1},description: "I will require sufficient of the Lantern's cleansing dawn, or the Moth's skintwisting."}],
+        },
+			{
+		id:"ascensionclarityc",
+		label: "Ascension: Beauty",
+		aspects: {desire:3, claritymarks:3},
+		xtriggers: {ascend:ascensionclarityd},
+		description:"I have tasted the fruits of the Apple-of-the-Eye, known as the Glorious Lie. Every hour, I look upon myself in the mirror, and every hour I am brought to the edge of tears by my many imperfections. I know this to be the Third Mark."
+		},
+				{
+		id:"ascensionclarityd",
+		label: "Ascension: Beauty",
+		aspects: {desire:4, claritymarks:4},
+		xtriggers: {ascend:ascensionclaritye,descend:ascensionclarityc},
+		description:"The Fourth Mark is a loss of colour and the beginning of transparency. I am growing paler by the day, and rainbows dance at the tip of my hair whenever I pass under the sun."
+		},
+						{
+		id:"ascensionclaritye",
+		label: "Ascension: Beauty",
+		aspects: {desire:5, claritymarks:5},
+		xtriggers: {ascend:ascensionclarityf,descend:ascensionclarityd},
+		description:"At the Fifth Mark, the body is no longer wounded, but cracked. My blood is frozen crystal, and my eyes are the colour of gems. I can see my muscles through my skin. I long for compliments."
+		},
+						{
+		id:"ascensionclarityf",
+		label: "Ascension: Beauty",
+		aspects: {desire:6, claritymarks:6},
+		xtriggers: {descend:ascensionclaritye},
+		description:"The Sixth Mark is said to occur when one is more beautiful than the person they see in the mirror. In my reflection, I can see my heart plainly, alongside all the pathways of blood. I am no longer capable of tears nor laughter."
+		},		
+	
+	
+	
+				{id: "claritymarks",
+		label: "The Marks of Clarity",
+		isAspect: true,
+		description: "I may seek immortality and beauty in the Hour called the Apple-of-the-Eye, known as the Tower of Treasures. Her touch brings particular appetites, and Marks. [Clarity is the shared dream of the Lantern and the Moth.]"
+		},
+]
+}

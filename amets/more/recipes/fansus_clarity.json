@@ -1,0 +1,194 @@
+{"recipes":
+[
+		{
+        id: "fancyconverttoenlightenment",
+        label: "The World Is Bigger Than You",
+        actionId: "fancy",
+        requirements: {claritymarks:1},
+        effects: {claritymarks:-1, ascensionenlightenmenta:1},
+        startdescription: "You may abandon your selfish ambition and take up a more noble cause.",
+        description: "Both the artist and the astronomer look at the sky. Both the vain and the curious look for the Glory. There is little difference between the two.",
+        warmup: 10,
+        craftable: true,
+    },
+	{
+        id: "fancyconverttobeauty",
+        label: "Look At Yourself In The Mirror",
+        actionId: "fancy",
+        requirements: {desire:1},
+        effects: {desire:-1, ascensionclaritya:1},
+        startdescription: "You may forsake your old desires for the new desire blossoming within you - the inhuman beauty of the Flowers of the Apple-of-the-Eye, that grows in the Glassgarden.",
+        description: "The Flowers are accounted either as powerful Dead or as weak Names. They are perfect, beautiful, brittle.",
+        warmup: 10,
+        craftable: true,
+    },
+
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   {
+        id: "ascensionclarity_upgradetoobsession",
+        label: "The Transparent Key",
+        actionId: "work",
+        requirements: {ascensionclarityb:1,
+		waystag_after:1,
+		lantern:6},
+        effects: {ascensionclarityb:-1,ascensionclarityc:1},
+        startdescription: "This rite is the Key that will allow me to enter the Tower of Treasures. I will be changed forever.",
+        description: "The Rite is complete. The Marks of the Apple-of-the-Eye are upon me. The First Mark is what I have said, and the second is what I have done. If I inspect my body, I'll find the Third. My mind is gleaming with new desire.",
+        warmup: 60,
+        craftable: true,
+		burnimage: "flammarion"
+    },
+		   {
+        id: "ascensionclarity_upgradetoobsession",
+        label: "The Transparent Key",
+        actionId: "work",
+        requirements: {ascensionclarityb:1,
+		waystag_after:1,
+		moth:6},
+        effects: {ascensionclarityb:-1,ascensionclarityc:1},
+        startdescription: "This rite is the Key that will allow me to enter the Tower of Treasures. I will be changed forever.",
+        description: "The Rite is complete. The Marks of the Apple-of-the-Eye are upon me. The First Mark is what I have said, and the second is what I have done. If I inspect my body, I'll find the Third. My mind is gleaming with new desire.",
+        warmup: 60,
+        craftable: true,
+		burnimage: "flammarion"
+    },
+			{
+        id: "dreamascensionclaritya",
+        label: "Meditate on my goal of unearthly beauty",
+        actionId: "dream",
+        requirements: {ascensionclaritya: 1},
+		slots: [{id:"Reflection",required:{lore:1,},description: "Dedicate myself with the lore of the principle I seek. I may not focus my efforts elsewhere. Not now."}],
+        startdescription: "Should I dedicate myself to my purpose? [Clarity is the shared dream of the Lantern and the Moth.]",
+        description: "I have decided to remain as I am... for now.",
+		alternativerecipes: [{id: "dreamascension_upgrade_clarity_1to2_moth",chance:100},
+		{id: "dreamascension_upgrade_clarity_1to2_lantern",chance:100}],
+		warmup: 60,
+        craftable: true
+    },
+{
+        id: "dreamascension_upgrade_clarity_1to2_moth",
+		label: "Mirror's Dedication",
+		actionId: "dream",
+		requirements: {lore:1, moth:1},
+		startdescription:"I will dedicate myself to the pursuit of beauty.",
+		description: "I've whispered the freeing words to the candle. Their every syllable is aflame - I have earned my attention. I will bleach myself to glass, so I may stand where there is light. [I have advanced a step towards a terrible ascension.]",
+		effects:{ascensionclaritya:-1,ascensionclarityb:1},		
+		burnimage: "lanterndedication"
+},
+{
+        id: "dreamascension_upgrade_clarity_1to2_lantern",
+		label: "Mirror's Dedication",
+		actionId: "dream",
+		requirements: {lore:1, lantern:1},
+		startdescription:"I will dedicate myself to the pursuit of beauty.",
+		description: "I have spoken the words: 'Each Hour has its colour, but colour exists only where there is light.' I will bleach myself to glass, so I may stand where there is light. [I have advanced a step towards a terrible ascension.]",
+		effects:{ascensionclaritya:-1,ascensionclarityb:1},		
+		burnimage: "lanterndedication"
+},
+
+	
+	
+	
+	
+	
+		{id:"ascensionhintclarity1",
+		label:"The Tower's Grandeur",
+		actionId:"craving",
+		requirements:{ascensionclaritya:1},
+		startdescription:"Hunger glows in my brain - hunger for the perfection the invisible arts might bring.",
+		description: "The Tower of Treasures, who is the Apple-of-the-Eye, waits in my dreams. If I learn the Moth-lore, and I dream of this temptation, I can advance my purpose. The need gnaws at me.",
+		effects:{restlessness:1},
+		warmup:10
+		},
+		{id:"ascensionhintclarity2",
+		label:"The Apple's Glory",
+		actionId:"craving",
+		requirements:{ascensionclarityb:1},
+		startdescription:"Even in waking hours, I have begun to glow with new colours.",
+		description: "My vanity is becoming a physical need. My skin will no longer bar my brilliance. It is almost time to perform the Work and begin the changes - but I must have enough Moth-aspect. <b>Exploration</b> might find more.",
+		effects:{restlessness:1},
+		warmup:10
+		},
+		
+		
+		
+		
+		
+		{id:"ascensioncravingclarity",
+		label:"The Demands of Narcissism",
+		actionId: "craving",
+		requirements: {claritymarks:1},
+		slots: [{id:"Peace and Quiet",description: "I wish to be left alone by fans and hunters both.", required: {reputation:1}, greedy:true }],
+		startdescription: "Time alone with myself and a mirror. That's all I need.",
+		linked: [,
+		{id:"ascensionsuccesscravingclarity_descend",chance:100},
+		{id:"ascensioncravingclarity_ascend",chance:100}],
+		warmup:30
+		},
+
+		
+		{
+		id:"ascensionsuccesscravingclarity_descend",
+		label:"The Desert Inside",		
+		actionId: "craving",
+		requirements: {reputation:1},
+		slots: [{id:"Pain",description: "My need gnaws at me", required: {passion:1,glimmering:1}, greedy:true}],		
+		startdescription: "If I cannot confirm my ascendant beauty, my need will turn in upon itself.",
+		description: "A little more colour returns to my skin. I am less than I was. I need solitude, and a great many other things. But solitude comes first.",
+		aspects: {descend:1,fatiguing:1},
+		effects:{reputation:-1, glimmering:-1},
+		warmup:30
+		},
+		
+				{
+		id:"ascensioncravingclarity_ascend",
+		label:"Another Mark",
+		actionId: "craving",
+		effects: {glimmering:2},
+		startdescription:".",
+		description: "I have seen what I was, what I am, and what I may become. The Marks brighten in me.",
+		aspects: {ascend:1}
+		},
+		
+		
+		
+		
+
+		
+	   {
+        id: "minorlanternvictory_fansus",
+        label: "The Glassgarden",
+        actionId: "work",
+        requirements: {ritual: 1,
+		ascensionclarityf:1,
+		lantern:12, moth:18},
+        effects: {},
+        startdescription: "I am almost fully transparent. Only the heart remains. I will pass through the Tricuspid Gate and I will not return. The Glorious Lie awaits me, and just beyond it is the Glory itself. My company will be perfect, beautiful, brittle. I will soon join them in their inhumanity. I will not be immortal: I will be more than that.",
+        description: "Up I go...",
+        warmup: 60,
+        craftable: true,
+		signalEndingFlavour: Grand,
+		ending: "visionsending"
+    },
+	
+				   {
+        id: "minorlanternvictory_fansus",
+        label: "The Seventh Mark?",
+        actionId: "work",
+        requirements: {ritual: 1,
+		ascensionclarityf:1},
+        effects: {},
+        startdescription: "The Seventh Mark is the Glassgarden. I am close: close as the window to the sun's gaze. I will need all the power of Moth I can muster, as well as the power of Lantern, to at least the eighteenth and twelfth degrees of intensity.",
+        description: ".",
+        warmup: 60,
+        craftable: false,
+		hintonly: true
+    },
+]
+}
