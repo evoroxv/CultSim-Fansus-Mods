@@ -1,0 +1,13 @@
+{"legacies":
+	[
+{id: "carer",
+label: "Caretaker",
+description: "As my body decays and I move on from my final resting place, I am once again pulled back by something. No, by someone.",
+startdescription: "My hands. My feet. I feel again, but I want for nothing. On occasion, I find myself drifting through tables and chairs, and one thing rings out in my mind.\n
+Protect your flock.",
+effects: {legacycarerjob:1},
+image: "aspirant",
+fromEnding:"deathofthebody",
+availableWithoutEndingMatch:true
+},
+]}
