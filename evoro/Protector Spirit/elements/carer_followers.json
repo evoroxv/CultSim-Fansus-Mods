@@ -1,0 +1,25 @@
+{"elements":
+[
+  {id: "dog_corpse",
+  label: "An Ex-Companion"
+  description: "One of your charges has met a sorry end. Perhaps there's still a way you could bring them back...\n
+  [Be wary of the Time, or the Pet Society will come to collect!]",
+  aspects: {winter:1}
+  },
+
+  {id: "followerdog_toby",
+  label: "Toby, a Good Boy",
+  description: "Toby wanders about the house unattended. Occasionally, he manages to open the biscuit jar.",
+  aspects: {follower:1,potential:1,heart:3},
+  xtriggers: {killmortal:dog_corpse}
+  },
+
+  {id: "followerdog_boone",
+  label: "Boone, a Good Boy",
+  description: "Boone enjoys long walks on the beach, howling at the moon, and gnawing on bones. Preferably fresh.",
+  aspects: {follower:1,potential:1,edge:3},
+  xtriggers: {killmortal:dog_corpse}
+  },
+
+]
+};

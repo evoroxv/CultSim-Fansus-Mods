@@ -5,31 +5,25 @@
 	description: "I am alive again. I know not how, and I know not why.\nYet here I am.",
 	aspects: {job:1}
 	},
-	
+
 	{id: "legacycarerjob_matured",
 	label: "A Clearing of the Mind",
 	description: "I am alive again. I know not how, and I know not why.\nI am getting used to it.",
 	aspects: {job:1}
 	},
-	
+
 	{id: "legacycarerjob_epilogue",
 	label: "A New Life, Of Sorts",
 	description: "I am alive again. It is rather pleasant. I hardly even remember being dead.",
 	aspects: {job:1}
 	},
-	
-	{id: "followerdog_toby",
-	label: "Toby, the Good Boy",
-	description: "Toby wanders about the house unattended. Occasionally, he manages to open the biscuit jar, and I often catch him in the act of scoffing treats. He always looks guilty when caught, and stops what he's doing.",
-	aspects: {follower:1,potential:1,heart:3}
-	},
-	
+
 	{id: "book_spectrestories",
 	label: "Stories of Spectres and Other Supernaturals",
 	description: "A hefty tome supposedly filled to the brim with real tales of real hauntings.\nI doubt its authenticity on that point, but I may still get something from it.",
 	aspects: {text:1,secrethistories:1}
 	},
-	
+
 	{id: "book_smallnote",
 	label: "A Small Note",
 	description: "Left by the young man from the Pet Society. Perhaps I could read it under some better lighting.",
