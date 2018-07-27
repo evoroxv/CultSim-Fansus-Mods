@@ -7,7 +7,7 @@
     aspects: {careeradvancement:1},
     alternativerecipes: [{id:"legacycareropendream",chance:100,additional:true}],
     startdescription: "What have I become? What has brought me back from beyond even Death's final curtain?",
-    description: "I find myself passing through furniture without thinking; passing mirrors and seeing nothing of myself; drinking water and finding naught but a puddle on the floor, despite feeling the cooling sensation of a fresh drink. There must be a logical explanation to this, though this brings me no comfort.",
+    description: "I find myself passing through furniture without thinking, drinking water and finding naught but a puddle on the floor. There must be a logical explanation to this.",
     effects: {legacycarerjob:-1,legacycarerjob_matured:1,reason:1},
     warmup:10,
     craftable: true},
@@ -26,7 +26,7 @@
     requirements: {legacycarerjob_matured:1},
     alternativerecipes: [{id:legacycareropenexplore,chance:100,additional:true}],
     startdescription: "Yet more howling in the basement.",
-    description: "I attempt to reason with my more logical side, finding some explanation for the unexplained. When that fails, I rediscover my emotions and urge myself to push through it, no matter what comes.",
+    description: "I attempt to find some explanation for the unexplained. When that fails, I rediscover my emotions and urge myself to push through it, no matter what comes.",
     effects: {legacycarerjob_epilogue:1,legacycarerjob_matured:-1,passion:1},
     warmup:10,
     craftable: true},
@@ -35,7 +35,7 @@
     label: "A Casual Theft",
     actionId: "explore",
     startdescription: "I must find out more on my condition. Why do I fade through most things, but not through others? Why do I not sleep, or eat, or drink as normal people do?",
-    description: "I leave the house for a spell. It is... pleasant to feel the outside air again, though I cannot breathe it in like I used to. No one pays me any heed, and no one seems to stop me as I make off with a few books on ghostly occurrences and near-death experiences.\nI make a note to pay for my books in future, if only to prevent Mrs. Morland investigating her missing stock.",
+    description: "I leave the house for a spell. It is pleasant to feel the outside air again, though I do not breathe it in like I used to. No one pays me any heed as I make off with a few books on ghostly occurrences and near-death experiences.\nI make a note to pay for my books in future, if only to prevent Mrs. Morland investigating her missing stock.",
     effects: {book_spectrestories:1,locationbookdealer:1,health:1},
     warmup:20,
     craftable: false},
@@ -46,7 +46,7 @@
   	startdescription: "A distinct lack of books is a poor sight for the dusty shelves. I shall aim to start the collection anew.",
   	description: "I straighten the lamp, clean out the drawers, and place the books I retrieved upon the shelves, wiping off the dust as I go. This study shall be put to much greater use in the future - I am sure of it.",
   	effects: {contentment:1},
-  	warmup:10,
+  	warmup:20,
   	craftable: false},
 
     {id: "study_spectrestories",
@@ -65,9 +65,9 @@
     alternativerecipes: [{id:carer_needs,chance:100,additional:true},
 	{id:legacycareropenstudy,chance:100,additional:true}],
     startdescription: "Someone is at the door. I only find out once the barking begins.",
-    description: "A young man kneels in the open doorway, scratching the ragged fur of a small canine. After deeming it safe and healthy, he stands and leaves a few notes on the counter, along with a small note.\nOnce the door closes, the dog turns, his eyes falling upon me. He barks once, then appears to smile, tongue rolling out of his mouth as he grins.\nI ruffle his fur, and once again the thought intrudes upon my mind: <b>Protect your flock</b>.",
+    description: "A young man kneels in the open doorway, tending to a small canine. After deeming it safe and healthy, he leaves - some gifts left on the counter. Once the door closes, the dog's eyes fall on me. He barks once, his tongue rolling out of his mouth as he grins.\nI ruffle his fur, and get back to business.\n<b>Protect your flock</b>.",
     effects: {followerdog_toby:1,book_smallnote:1,funds:2,legacycarerjob_epilogue:-1,restlessness:-5,dread:-5},
     warmup: 10,
     craftable: true},
   ]
-}
+};
