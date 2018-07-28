@@ -34,12 +34,12 @@ requirements: {},
 	},
 
 	{id: "study_smallnote",
-	label: "A Strange Note"
+	label: "A Strange Note",
 	actionId: "study",
-	requirements: {book_smallnote:1}
+	requirements: {book_smallnote:1},
 	effects: {book_smallnote:-1,fragmentsecrethistories:1},
 	startdescription:"I place the folded note upon my desk, preparing to read.",
-	description:"The note is typed, rather than written, which is curious in itself. It reads:\n'#CHARACTERNAME#,\nWe know who you are. Or, at least, who you were. Accept our small gift of knowledge, and look after your pets well. We will come to collect our due should you fail.'"
+	description:"The note is typed, rather than written, which is curious in itself. It reads:\n'#CHARACTERNAME#,\nWe know who you are. Or, at least, who you were. Accept our small gift of knowledge, and look after your pets well. We will come to collect our due should you fail.'",
 	warmup:10,
 	craftable:true
 	},
